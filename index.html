@@ -19,11 +19,11 @@
             <div class="header-content">
                 <div class="logo">
                     <svg class="logo-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 17H21C21 17.5304 20.7893 18.0391 20.4142 18.4142C20.0391 18.7893 19.5304 19 19 19V17ZM19 17H12V19H19V17ZM19 17V11L16 6H12V8" stroke="#4285F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5 17H3C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19V17ZM5 17H12V19H5V17ZM5 17V11L8 6H12V8" stroke="#4285F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="7.5" cy="18.5" r="2.5" stroke="#4285F4" stroke-width="2"/>
-                        <circle cx="16.5" cy="18.5" r="2.5" stroke="#4285F4" stroke-width="2"/>
-                        <path d="M12 6V14" stroke="#4285F4" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M19 17H21C21 17.5304 20.7893 18.0391 20.4142 18.4142C20.0391 18.7893 19.5304 19 19 19V17ZM19 17H12V19H19V17ZM19 17V11L16 6H12V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 17H3C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19V17ZM5 17H12V19H5V17ZM5 17V11L8 6H12V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="7.5" cy="18.5" r="2.5" stroke="white" stroke-width="2"/>
+                        <circle cx="16.5" cy="18.5" r="2.5" stroke="white" stroke-width="2"/>
+                        <path d="M12 6V14" stroke="white" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                     <span class="logo-text">らくらく送迎</span>
                 </div>
@@ -172,8 +172,8 @@
     <!-- スマホ画面遷移セクション -->
     <section class="screen-flow">
         <div class="container">
-            <h2 class="section-title">スマホで簡単3ステップ</h2>
-            <p class="section-subtitle">管理コード入力から記録完了まで、直感的な操作で完了します</p>
+            <h2 class="section-title">実際の画面遷移（6ステップ）</h2>
+            <p class="section-subtitle">管理コード入力から送迎完了まで、実際のアプリと同じ流れです</p>
             
             <div class="flow-container">
                 <!-- ステップ1: ログイン -->
@@ -362,8 +362,8 @@
                     
                     <div class="interface-features">
                         <p>✓ 大きなボタンで簡単操作</p>
-                        <p>✓ 車椅子・医療情報を一目で確認</p>
-                        <p>✓ ワンタップで時刻記録</p>
+                        <p>✓ リアルタイムでの時刻記録</p>
+                        <p>✓ ワンタップで到着・出発記録</p>
                     </div>
                 </div>
 
@@ -409,7 +409,10 @@
                                 </div>
                                 
                                 <div class="record-table">
-                                    <div class="record-header">本日の送迎記録</div>
+                                    <div class="record-header">
+                                        <span>本日の送迎記録</span>
+                                        <button class="export-btn">📊 CSV出力</button>
+                                    </div>
                                     <div class="record-row">
                                         <span>田中花子</span>
                                         <span>14:30 完了</span>
@@ -420,6 +423,11 @@
                                         <span>15:45 予定</span>
                                         <div class="status-indicator" style="background: var(--accent-color);"></div>
                                     </div>
+                                    <div class="record-row">
+                                        <span>山田次郎</span>
+                                        <span>16:15 予定</span>
+                                        <div class="status-indicator" style="background: var(--text-light);"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -427,8 +435,8 @@
                     
                     <div class="interface-features">
                         <p>✓ 全体の送迎状況を一覧管理</p>
-                        <p>✓ 詳細なレポート作成・分析</p>
-                        <p>✓ 利用者情報の安全な管理</p>
+                        <p>✓ CSV形式での記録出力機能</p>
+                        <p>✓ 月次・年次レポート作成</p>
                     </div>
                 </div>
             </div>

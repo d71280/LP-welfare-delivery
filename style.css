@@ -42,7 +42,7 @@ body {
 
 /* ヘッダー */
 .header {
-    background: rgba(255, 255, 255, 0.95);
+    background: #1e293b;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     position: fixed;
@@ -65,7 +65,7 @@ body {
     gap: 12px;
     font-weight: 700;
     font-size: 20px;
-    color: var(--text-dark);
+    color: white;
 }
 
 .logo-icon {
@@ -81,13 +81,13 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: var(--text-gray);
+    color: #cbd5e1;
     font-weight: 500;
     transition: color 0.2s;
 }
 
 .nav a:hover {
-    color: var(--text-dark);
+    color: white;
 }
 
 .btn-contact {
@@ -740,6 +740,9 @@ body {
     font-weight: 600;
     color: var(--text-gray);
     border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .record-row {
@@ -808,11 +811,11 @@ body {
 }
 
 .phone-frame {
-    width: 200px;
-    height: 400px;
+    width: 160px;
+    height: 320px;
     background: #1a1a1a;
-    border-radius: 32px;
-    padding: 8px;
+    border-radius: 24px;
+    padding: 6px;
     margin: 0 auto;
     box-shadow: var(--shadow-xl);
 }
@@ -1118,7 +1121,7 @@ body {
 
 /* フッター */
 .footer {
-    background: var(--text-dark);
+    background: #1e293b;
     color: white;
     padding: 48px 0;
 }
@@ -1326,4 +1329,23 @@ body {
     height: 8px;
     border-radius: 50%;
     background: var(--safe-green);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.export-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.export-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
 }
