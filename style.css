@@ -7,8 +7,8 @@
 
 /* 変数定義 */
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #34d399;
+    --primary-color: #2563eb;
+    --secondary-color: #10b981;
     --accent-color: #f59e0b;
     --text-dark: #111827;
     --text-gray: #6b7280;
@@ -16,11 +16,13 @@
     --bg-light: #f9fafb;
     --bg-card: #ffffff;
     --border-color: #e5e7eb;
-    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-text: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --gradient: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    --gradient-text: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    --safe-green: #22c55e;
+    --danger-red: #ef4444;
 }
 
 /* ベース設定 */
@@ -104,35 +106,139 @@ body {
 /* ヒーローセクション */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: var(--bg-light);
 }
 
 .hero-content {
     text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .hero-title {
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 24px;
-    color: var(--text-dark);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
 }
 
-.gradient-text {
-    background: var(--gradient-text);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.highlight {
+    color: var(--primary-color);
+    background: linear-gradient(to bottom, transparent 60%, rgba(99, 102, 241, 0.2) 60%);
+    padding: 0 4px;
 }
 
 .hero-subtitle {
     font-size: 20px;
     color: var(--text-gray);
     margin-bottom: 48px;
-    line-height: 1.6;
+}
+
+/* アプリプレビュー */
+.app-preview {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.phone-mockup {
+    width: 320px;
+    background: #000;
+    border-radius: 40px;
+    padding: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.phone-screen {
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+    height: 640px;
+}
+
+.app-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-logo {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.app-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.app-content {
+    padding: 24px;
+    text-align: center;
+}
+
+.app-subtitle {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 16px;
+}
+
+.timer {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.service-card {
+    padding: 16px 8px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+}
+
+.service-card .icon {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.service-card span:last-child {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.service-card.blue {
+    background: var(--primary-color);
+}
+
+.service-card.green {
+    background: var(--secondary-color);
+}
+
+.service-card.orange {
+    background: #FF6B6B;
+}
+
+.start-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 24px;
 }
 
 /* 統計プレビュー */
@@ -462,6 +568,199 @@ body {
 .screen-flow {
     padding: 100px 0;
     background: var(--bg-light);
+}
+
+/* 管理画面セクション */
+.admin-section {
+    padding: 100px 0;
+    background: var(--bg-card);
+}
+
+.interface-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+/* モバイル画面エリア */
+.mobile-interface {
+    text-align: center;
+}
+
+.mobile-interface h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.mobile-interface .subtitle {
+    font-size: 16px;
+    color: var(--text-gray);
+    margin-bottom: 40px;
+}
+
+/* PC画面エリア */
+.desktop-interface {
+    text-align: center;
+}
+
+.desktop-interface h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.desktop-interface .subtitle {
+    font-size: 16px;
+    color: var(--text-gray);
+    margin-bottom: 40px;
+}
+
+/* PC画面モックアップ */
+.pc-mockup {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: var(--shadow-xl);
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.pc-screen {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-header {
+    background: var(--bg-light);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pc-header-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.pc-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 管理画面カード */
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.admin-card {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
+}
+
+.admin-card:hover {
+    background: #f0f9ff;
+    border-color: var(--primary-color);
+}
+
+.admin-card-icon {
+    font-size: 24px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.admin-card-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-gray);
+}
+
+/* アクセシビリティバッジ */
+.accessibility-badges {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+    justify-content: center;
+}
+
+.badge {
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 500;
+}
+
+.badge.wheelchair {
+    background: #8b5cf6;
+}
+
+.badge.medical {
+    background: var(--danger-red);
+}
+
+.badge.assistance {
+    background: var(--accent-color);
+}
+
+/* 送迎記録テーブル */
+.record-table {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.record-header {
+    background: var(--bg-light);
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-gray);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.record-row {
+    padding: 8px 12px;
+    font-size: 10px;
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.record-row:last-child {
+    border-bottom: none;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--safe-green);
 }
 
 .section-subtitle {
@@ -920,4 +1219,111 @@ body {
         width: 180px;
         height: 360px;
     }
+    .interface-showcase {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+    
+    .pc-mockup {
+        max-width: 400px;
+    }
+    
+    .admin-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    
+    .admin-card {
+        padding: 12px 8px;
+    }
+    
+    .admin-card-icon {
+        font-size: 20px;
+    }
+    
+    .admin-card-label {
+        font-size: 10px;
+    }
+}
+/* 利用者カード */
+.user-list {
+    margin: 16px 0;
+}
+
+.user-card {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.time-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.time-buttons button {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 11px;
+}
+
+/* 走行距離表示 */
+.odometer {
+    background: var(--bg-card);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border-color);
+}
+
+.odometer-label {
+    font-size: 11px;
+    color: var(--text-gray);
+}
+
+.odometer-value {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-family: monospace;
+}
+
+/* インターフェース機能リスト */
+.interface-features {
+    margin-top: 24px;
+    text-align: left;
+}
+
+.interface-features p {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--safe-green);
 }
