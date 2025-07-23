@@ -58,7 +58,8 @@ body {
 }
 
 .logo-icon {
-    font-size: 24px;
+    width: 32px;
+    height: 32px;
 }
 
 .nav {
@@ -148,9 +149,10 @@ body {
 }
 
 .app-logo {
-    font-size: 40px;
+    width: 40px;
+    height: 40px;
     display: block;
-    margin-bottom: 8px;
+    margin: 0 auto 8px;
 }
 
 .app-title {
@@ -224,6 +226,53 @@ body {
     cursor: pointer;
     width: 100%;
     margin-top: 24px;
+}
+
+/* ドライバー画面 */
+.driver-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+}
+
+.driver-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+}
+
+.driver-info {
+    width: 100%;
+    text-align: center;
+}
+
+.driver-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.driver-select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 32px;
+}
+
+.next-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 16px 48px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 /* セクション共通 */
@@ -568,6 +617,24 @@ section {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 16px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-nav a {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: white;
 }
 
 .footer-copy {

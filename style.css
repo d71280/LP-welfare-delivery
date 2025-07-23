@@ -1175,6 +1175,17 @@ body {
     padding: 0 var(--spacing-md);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+}
+
 .logo h1 {
     font-size: var(--font-size-2xl);
     color: var(--primary-color);
