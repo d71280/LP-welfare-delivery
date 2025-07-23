@@ -520,6 +520,35 @@ section {
     transform: translateY(-2px);
 }
 
+/* 問い合わせボタン */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.btn-email {
+    background: var(--primary-color);
+}
+
+.btn-email:hover {
+    background: #3367d6;
+}
+
+.btn-line {
+    background: #00B900;
+}
+
+.btn-line:hover {
+    background: #00A000;
+}
+
+.line-icon {
+    width: 24px;
+    height: 24px;
+}
+
 /* フッター */
 .footer {
     background: #1a1a1a;

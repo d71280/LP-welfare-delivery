@@ -2891,7 +2891,11 @@ body {
 }
 
 .cta-buttons {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
     margin-bottom: var(--spacing-xl);
 }
 
@@ -2909,9 +2913,27 @@ body {
 }
 
 .cta-reassurance {
+    width: 100%;
+    text-align: center;
     margin-top: var(--spacing-sm);
     font-size: var(--font-size-base);
     color: var(--text-gray);
+}
+
+/* LINE ボタン */
+.btn-line {
+    background: #00B900;
+}
+
+.btn-line:hover {
+    background: #00A000;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0, 185, 0, 0.4);
+}
+
+.line-icon {
+    width: 24px;
+    height: 24px;
 }
 
 /* サポート情報 */
