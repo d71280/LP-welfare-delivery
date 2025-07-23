@@ -458,10 +458,245 @@ body {
     font-weight: 600;
 }
 
+/* スマホ画面遷移セクション */
+.screen-flow {
+    padding: 100px 0;
+    background: var(--bg-light);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-gray);
+    margin-bottom: 64px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flow-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flow-step {
+    flex: 1;
+    text-align: center;
+    max-width: 280px;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto 24px;
+    box-shadow: var(--shadow-lg);
+}
+
+.phone-demo {
+    margin-bottom: 24px;
+}
+
+.phone-frame {
+    width: 200px;
+    height: 400px;
+    background: #1a1a1a;
+    border-radius: 32px;
+    padding: 8px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-xl);
+}
+
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header-demo {
+    background: var(--primary-color);
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.screen-content {
+    flex: 1;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-subtitle {
+    font-size: 12px;
+    color: var(--text-gray);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* ログインフォーム */
+.login-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.form-field label {
+    display: block;
+    font-size: 12px;
+    color: var(--text-gray);
+    margin-bottom: 4px;
+}
+
+.demo-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.demo-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.demo-button.primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* サービスグリッド */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.service-option {
+    padding: 12px 4px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.service-option.blue {
+    background: var(--primary-color);
+}
+
+.service-option.green {
+    background: var(--secondary-color);
+}
+
+.service-option.orange {
+    background: #FF6B6B;
+}
+
+.service-icon {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+/* 完了画面 */
+.completion {
+    text-align: center;
+    justify-content: center;
+}
+
+.completion-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.completion h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.completion-stats {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    font-size: 12px;
+}
+
+.stat-label {
+    color: var(--text-gray);
+}
+
+.stat-value {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.auto-save {
+    font-size: 11px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.flow-step h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.flow-step p {
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.flow-arrow {
+    font-size: 32px;
+    color: var(--primary-color);
+    align-self: center;
+    margin-top: 100px;
+}
+
 /* 料金セクション */
 .pricing {
     padding: 100px 0;
-    background: var(--bg-light);
+    background: var(--bg-card);
 }
 
 .pricing-simple {
@@ -668,5 +903,21 @@ body {
     .footer-nav {
         flex-direction: column;
         gap: 16px;
+    }
+    
+    .flow-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+    
+    .flow-arrow {
+        transform: rotate(90deg);
+        margin: 0;
+    }
+    
+    .phone-frame {
+        width: 180px;
+        height: 360px;
     }
 }
