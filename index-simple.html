@@ -41,357 +41,175 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    送迎記録を<span class="highlight">一元管理</span>
+                    送迎記録が<br>
+                    <span class="gradient-text">らくらく</span>完了
                 </h1>
                 <p class="hero-subtitle">
-                    ドライバーがらくらく入力。手書きからデジタルへ。
+                    毎日の送迎記録から解放され、本来の業務に集中できる。<br>
+                    AI分析であなたの創作活動を次のレベルへ。
                 </p>
                 
-                <!-- 実際のアプリ画面 -->
-                <div class="app-preview">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="app-header">
-                                <svg class="app-logo" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19 17H21C21 17.5304 20.7893 18.0391 20.4142 18.4142C20.0391 18.7893 19.5304 19 19 19V17ZM19 17H12V19H19V17ZM19 17V11L16 6H12V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5 17H3C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19V17ZM5 17H12V19H5V17ZM5 17V11L8 6H12V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <circle cx="7.5" cy="18.5" r="2.5" stroke="white" stroke-width="2"/>
-                                    <circle cx="16.5" cy="18.5" r="2.5" stroke="white" stroke-width="2"/>
-                                    <path d="M12 6V14" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                                <span class="app-title">福祉送迎ドライバー</span>
+                <!-- 統計カード -->
+                <div class="stats-preview">
+                    <div class="stat-card">
+                        <div class="stat-icon">⏱️</div>
+                        <div class="stat-content">
+                            <div class="stat-label">記録時間</div>
+                            <div class="stat-value">0分</div>
+                            <div class="stat-change">+100% 効率化</div>
+                        </div>
+                    </div>
+                    <div class="stat-card main-stat">
+                        <div class="stat-content">
+                            <div class="stat-label">今日の送迎記録</div>
+                            <div class="stat-main-value">
+                                <span class="stat-number">15</span>
+                                <span class="stat-unit">件</span>
                             </div>
-                            <div class="app-content driver-screen">
-                                <svg class="driver-icon" width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19 17H21C21 17.5304 20.7893 18.0391 20.4142 18.4142C20.0391 18.7893 19.5304 19 19 19V17ZM19 17H12V19H19V17ZM19 17V11L16 6H12V8" stroke="#4285F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5 17H3C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19V17ZM5 17H12V19H5V17ZM5 17V11L8 6H12V8" stroke="#4285F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <circle cx="7.5" cy="18.5" r="2.5" stroke="#4285F4" stroke-width="2"/>
-                                    <circle cx="16.5" cy="18.5" r="2.5" stroke="#4285F4" stroke-width="2"/>
-                                    <path d="M12 6V14" stroke="#4285F4" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                                
-                                <div class="driver-info">
-                                    <h3>送迎担当者</h3>
-                                    <select class="driver-select">
-                                        <option>山田 太郎</option>
-                                        <option>佐藤 花子</option>
-                                        <option>鈴木 次郎</option>
-                                    </select>
-                                </div>
-                                
-                                <button class="next-button">
-                                    次へ
-                                </button>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
                             </div>
+                            <div class="stat-summary">目標達成率: 75%</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-content">
+                            <div class="stat-label">月間レポート</div>
+                            <div class="stat-value">自動生成</div>
+                            <div class="stat-change">手作業 0時間</div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 課題セクション -->
-    <section class="problems">
-        <div class="container">
-            <h2 class="section-title">こんな課題はありませんか？</h2>
-            <div class="problem-list">
-                <div class="problem-item">
-                    <span class="problem-icon">📝</span>
-                    <div class="problem-text">
-                        <h3>紙記録でデータ入力に時間がかかる</h3>
-                        <p>毎日の送迎記録を手書きで記入し、後でまとめて入力...</p>
-                    </div>
-                </div>
-                <div class="problem-item">
-                    <span class="problem-icon">📊</span>
-                    <div class="problem-text">
-                        <h3>一元管理できていない</h3>
-                        <p>ドライバー、車両、利用者の情報がバラバラに管理されている</p>
-                    </div>
-                </div>
-                <div class="problem-item">
-                    <span class="problem-icon">⚠️</span>
-                    <div class="problem-text">
-                        <h3>データ記録漏れがある</h3>
-                        <p>忙しい時の記録忘れや、転記ミスが発生</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ソリューションセクション -->
-    <section class="solution">
-        <div class="container">
-            <h2 class="section-title">らくらく送迎が解決します</h2>
-            
-            <!-- 画面遷移デモ -->
-            <div class="screen-flow-detailed">
-                <!-- フェーズ1: ログイン -->
-                <div class="flow-item">
-                    <div class="flow-number">1</div>
-                    <div class="flow-screen">
-                        <div class="phone-mockup-small">
-                            <div class="phone-screen-small">
-                                <div class="app-header-small">
-                                    <span>🚐 福祉送迎ドライバー</span>
-                                </div>
-                                <div class="app-content-small">
-                                    <div class="input-section">
-                                        <p class="label">🔑 管理コード</p>
-                                        <input type="text" class="input-demo" placeholder="6桁の管理コード" />
-                                        <button class="btn-demo">確認</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="flow-caption">管理コード6桁で簡単ログイン</p>
+                
+                <!-- CTA ボタン -->
+                <div class="hero-cta">
+                    <a href="mailto:info@rakuraku-souei.jp" class="btn-primary btn-gradient">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        無料で始める
+                    </a>
+                    <button class="btn-secondary">
+                        機能を見る
+                    </button>
                 </div>
                 
-                <div class="flow-arrow">→</div>
-                
-                <!-- フェーズ2: サービス選択 -->
-                <div class="flow-item">
-                    <div class="flow-number">2</div>
-                    <div class="flow-screen">
-                        <div class="phone-mockup-small">
-                            <div class="phone-screen-small">
-                                <div class="app-header-small">
-                                    <span>🚐 福祉送迎ドライバー</span>
-                                </div>
-                                <div class="app-content-small">
-                                    <div class="service-select">
-                                        <div class="service-btn blue">🚐 通所支援</div>
-                                        <div class="service-btn green">🏥 医療送迎</div>
-                                        <div class="service-btn orange">🏠 外出支援</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="flow-caption">サービスを選択</p>
-                </div>
-                
-                <div class="flow-arrow">→</div>
-                
-                <!-- フェーズ3: ドライバー選択 -->
-                <div class="flow-item">
-                    <div class="flow-number">3</div>
-                    <div class="flow-screen">
-                        <div class="phone-mockup-small">
-                            <div class="phone-screen-small">
-                                <div class="app-header-small">
-                                    <span>🚐 送迎情報の設定</span>
-                                </div>
-                                <div class="app-content-small">
-                                    <div class="select-section">
-                                        <p class="label">🚗 担当ドライバー</p>
-                                        <select class="select-demo">
-                                            <option>山田 太郎</option>
-                                        </select>
-                                        <p class="label">🚐 送迎車両</p>
-                                        <select class="select-demo">
-                                            <option>ハイエース1号車</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="flow-caption">ドライバーと車両を選択</p>
-                </div>
-                
-                <div class="flow-arrow">→</div>
-                
-                <!-- フェーズ4: 利用者選択 -->
-                <div class="flow-item">
-                    <div class="flow-number">4</div>
-                    <div class="flow-screen">
-                        <div class="phone-mockup-small">
-                            <div class="phone-screen-small">
-                                <div class="app-header-small">
-                                    <span>👤 利用者選択</span>
-                                </div>
-                                <div class="app-content-small">
-                                    <div class="user-select">
-                                        <div class="user-item">
-                                            <input type="checkbox" checked />
-                                            <span>田中 花子 様</span>
-                                        </div>
-                                        <div class="user-item">
-                                            <input type="checkbox" checked />
-                                            <span>佐藤 次郎 様</span>
-                                        </div>
-                                        <div class="user-item">
-                                            <input type="checkbox" />
-                                            <span>鈴木 一郎 様</span>
-                                        </div>
-                                    </div>
-                                    <button class="btn-demo">選択完了</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="flow-caption">本日の利用者を選択</p>
-                </div>
-                
-                <div class="flow-arrow">→</div>
-                
-                <!-- フェーズ5: 送迎管理画面 -->
-                <div class="flow-item">
-                    <div class="flow-number">5</div>
-                    <div class="flow-screen">
-                        <div class="phone-mockup-small">
-                            <div class="phone-screen-small">
-                                <div class="app-header-small">
-                                    <span>🚐 送迎管理</span>
-                                </div>
-                                <div class="app-content-small">
-                                    <div class="pickup-list">
-                                        <div class="pickup-item">
-                                            <div class="user-info">
-                                                <span class="user-icon">👤</span>
-                                                <span>田中 花子 様</span>
-                                            </div>
-                                            <button class="pickup-btn">お迎え</button>
-                                        </div>
-                                        <div class="pickup-item">
-                                            <div class="user-info">
-                                                <span class="user-icon">👤</span>
-                                                <span>佐藤 次郎 様</span>
-                                            </div>
-                                            <button class="pickup-btn">お迎え</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="flow-caption">送迎開始</p>
-                </div>
-                
-                <div class="flow-arrow">→</div>
-                
-                <!-- フェーズ6: 記録完了 -->
-                <div class="flow-item">
-                    <div class="flow-number">6</div>
-                    <div class="flow-screen">
-                        <div class="phone-mockup-small">
-                            <div class="phone-screen-small">
-                                <div class="app-header-small">
-                                    <span>✅ 送迎完了</span>
-                                </div>
-                                <div class="app-content-small">
-                                    <div class="complete-screen">
-                                        <div class="complete-icon">✅</div>
-                                        <h3>送迎完了！</h3>
-                                        <div class="summary">
-                                            <p>送迎人数: 2名</p>
-                                            <p>所要時間: 45分</p>
-                                        </div>
-                                        <p class="complete-msg">記録は自動保存されました</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="flow-caption">送迎完了と同時に自動記録</p>
+                <!-- 信頼バッジ -->
+                <div class="trust-badges">
+                    <span>✓ 月額980円のみ</span>
+                    <span>✓ 初期費用0円</span>
+                    <span>✓ いつでも解約OK</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 機能セクション -->
-    <section id="features" class="features">
+    <section class="features">
         <div class="container">
-            <h2 class="section-title">主な機能</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>ドライバー管理</h3>
-                    <p>ドライバー情報を一元管理。シフトや稼働状況も把握</p>
+            <h2 class="section-title">3つの主要機能</h2>
+            <div class="feature-showcase">
+                <!-- 機能1: 自動記録 -->
+                <div class="feature-demo">
+                    <div class="demo-visual">
+                        <div class="chart-container">
+                            <div class="progress-circle">
+                                <svg viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e7ff" stroke-width="8"/>
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="#4285F4" stroke-width="8" 
+                                           stroke-dasharray="283" stroke-dashoffset="42.45" stroke-linecap="round"/>
+                                </svg>
+                                <div class="circle-text">
+                                    <span class="circle-number">85%</span>
+                                    <span class="circle-label">時短</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>📝 自動記録で楽々</h3>
+                        <p>送迎完了と同時に記録が自動保存。手書きやデータ入力の時間を85%削減。</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚐</div>
-                    <h3>車両管理</h3>
-                    <p>車両情報と稼働状況を管理。点検記録も一緒に</p>
+                
+                <!-- 機能2: 一元管理 -->
+                <div class="feature-demo">
+                    <div class="demo-visual">
+                        <div class="dashboard-preview">
+                            <div class="dashboard-item">
+                                <span class="dash-icon">👥</span>
+                                <span class="dash-label">ドライバー</span>
+                                <span class="dash-value">12名</span>
+                            </div>
+                            <div class="dashboard-item">
+                                <span class="dash-icon">🚐</span>
+                                <span class="dash-label">車両</span>
+                                <span class="dash-value">5台</span>
+                            </div>
+                            <div class="dashboard-item">
+                                <span class="dash-icon">👤</span>
+                                <span class="dash-label">利用者</span>
+                                <span class="dash-value">89名</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>📊 一元管理でスッキリ</h3>
+                        <p>ドライバー、車両、利用者の情報を一つの画面で管理。バラバラな資料とはお別れ。</p>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏠</div>
-                    <h3>利用者管理</h3>
-                    <p>利用者情報を安全に管理。送迎履歴も確認可能</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💾</div>
-                    <h3>自動保存</h3>
-                    <p>送迎完了と同時に記録を自動保存。記録漏れゼロへ</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>レポート出力</h3>
-                    <p>日報・月報をワンクリックで出力。集計も自動化</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔍</div>
-                    <h3>検索機能</h3>
-                    <p>過去の送迎記録を簡単検索。必要な情報にすぐアクセス</p>
+                
+                <!-- 機能3: レポート -->
+                <div class="feature-demo">
+                    <div class="demo-visual">
+                        <div class="report-preview">
+                            <div class="report-header">月次レポート</div>
+                            <div class="report-stats">
+                                <div class="report-item">
+                                    <span class="report-number">245</span>
+                                    <span class="report-label">件</span>
+                                </div>
+                                <div class="report-trend">↗ +12%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>📈 レポートも自動生成</h3>
+                        <p>月次・年次レポートをワンクリックで生成。集計作業から解放されます。</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 導入効果 -->
-    <section class="benefits">
-        <div class="container">
-            <h2 class="section-title">導入効果</h2>
-            <div class="benefit-cards">
-                <div class="benefit-card">
-                    <div class="benefit-icon">⏱️</div>
-                    <h3>記録時間</h3>
-                    <div class="benefit-change">
-                        <span class="before">2時間/日</span>
-                        <span class="arrow">→</span>
-                        <span class="after">0分/日</span>
-                    </div>
-                    <p class="benefit-text">送迎と共に終了</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">📄</div>
-                    <h3>書類作成</h3>
-                    <div class="benefit-change">
-                        <span class="before">8時間/月</span>
-                        <span class="arrow">→</span>
-                        <span class="after">0時間/月</span>
-                    </div>
-                    <p class="benefit-text">自動作成</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- 料金セクション -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <h2 class="section-title">料金プラン</h2>
-            <div class="price-card">
-                <h3 class="price-title">らくらく送迎プラン</h3>
-                <div class="price-amount">
-                    <span class="currency">¥</span>
-                    <span class="amount">980</span>
-                    <span class="period">/月</span>
+            <div class="pricing-simple">
+                <div class="pricing-header">
+                    <h2>シンプルな料金体系</h2>
+                    <p>複雑な料金プランはありません。月額980円ですべての機能をご利用いただけます。</p>
                 </div>
-                <p class="price-desc">すべての機能が使い放題</p>
-                <ul class="price-features">
-                    <li>✓ ドライバー管理</li>
-                    <li>✓ 車両管理</li>
-                    <li>✓ 利用者管理</li>
-                    <li>✓ 送迎記録の自動保存</li>
-                    <li>✓ レポート出力</li>
-                    <li>✓ メールサポート</li>
-                    <li>✓ データバックアップ</li>
-                </ul>
-                <p class="price-note">初期費用: 0円</p>
+                
+                <div class="pricing-card">
+                    <div class="price-badge">おすすめ</div>
+                    <div class="price-display">
+                        <span class="price-main">¥980</span>
+                        <span class="price-period">/月</span>
+                    </div>
+                    <div class="price-features">
+                        <span class="feature-item">✓ 無制限利用</span>
+                        <span class="feature-item">✓ 全機能アクセス</span>
+                        <span class="feature-item">✓ データバックアップ</span>
+                        <span class="feature-item">✓ メールサポート</span>
+                    </div>
+                    <div class="price-footer">
+                        <p class="price-note">初期費用・解約金: 0円</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
