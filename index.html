@@ -63,25 +63,27 @@
                             </div>
                             <div class="app-content">
                                 <p class="app-subtitle">安全運転でご利用者様をお送りします</p>
-                                <div class="timer">⏰ 22:16:34</div>
                                 
-                                <div class="service-cards">
-                                    <div class="service-card blue">
-                                        <span class="icon">🚐</span>
-                                        <span>通所支援</span>
-                                    </div>
-                                    <div class="service-card green">
-                                        <span class="icon">🏥</span>
-                                        <span>医療送迎</span>
-                                    </div>
-                                    <div class="service-card orange">
-                                        <span class="icon">🏠</span>
-                                        <span>外出支援</span>
+                                <div class="service-types">
+                                    <h3 class="service-title">本日の送迎タイプを選択</h3>
+                                    <div class="service-cards">
+                                        <div class="service-card active">
+                                            <span class="icon">🚐</span>
+                                            <span>施設送迎</span>
+                                        </div>
+                                        <div class="service-card">
+                                            <span class="icon">🏥</span>
+                                            <span>通院送迎</span>
+                                        </div>
+                                        <div class="service-card">
+                                            <span class="icon">🏠</span>
+                                            <span>居宅送迎</span>
+                                        </div>
                                     </div>
                                 </div>
                                 
                                 <button class="start-button">
-                                    🚗 送迎を開始する
+                                    送迎を開始
                                 </button>
                             </div>
                         </div>
@@ -195,9 +197,10 @@
                                 </div>
                                 <div class="screen-content">
                                     <div class="login-form">
+                                        <h3 class="login-title">福祉送迎システム</h3>
                                         <div class="form-field">
-                                            <label>🔑 管理コード</label>
-                                            <input type="text" placeholder="123456" class="demo-input" />
+                                            <label>管理コード</label>
+                                            <input type="text" placeholder="6桁のコードを入力" class="demo-input" />
                                         </div>
                                         <button class="demo-button primary">ログイン</button>
                                     </div>
@@ -227,16 +230,22 @@
                                 </div>
                                 <div class="screen-content">
                                     <div class="driver-selection">
+                                        <h3 class="selection-title">送迎準備</h3>
                                         <div class="selection-item">
-                                            <span class="label">👨‍💼 ドライバー</span>
+                                            <span class="label">ドライバー</span>
                                             <select class="demo-select">
-                                                <option>田中太郎</option>
+                                                <option>選択してください</option>
+                                                <option>田中 太郎</option>
+                                                <option>佐藤 次郎</option>
+                                                <option>山田 三郎</option>
                                             </select>
                                         </div>
                                         <div class="selection-item">
-                                            <span class="label">🚐 車両</span>
+                                            <span class="label">使用車両</span>
                                             <select class="demo-select">
-                                                <option>車両001</option>
+                                                <option>選択してください</option>
+                                                <option>ハイエース（車両001）</option>
+                                                <option>キャラバン（車両002）</option>
                                             </select>
                                         </div>
                                         <button class="demo-button primary">確定</button>
@@ -266,25 +275,33 @@
                                     <span>利用者選択</span>
                                 </div>
                                 <div class="screen-content">
+                                    <h3 class="selection-title">本日の送迎対象者</h3>
                                     <div class="user-selection">
                                         <div class="user-select-card selected">
+                                            <div class="user-avatar">田</div>
                                             <div class="user-info">
-                                                <span class="user-name">田中花子</span>
+                                                <span class="user-name">田中 花子 様</span>
+                                                <span class="user-details">デイサービスA ｜ 車椅子</span>
                                             </div>
                                             <div class="check-icon">✓</div>
                                         </div>
                                         <div class="user-select-card selected">
+                                            <div class="user-avatar">佐</div>
                                             <div class="user-info">
-                                                <span class="user-name">佐藤太郎</span>
+                                                <span class="user-name">佐藤 太郎 様</span>
+                                                <span class="user-details">デイサービスA</span>
                                             </div>
                                             <div class="check-icon">✓</div>
                                         </div>
                                         <div class="user-select-card">
+                                            <div class="user-avatar">山</div>
                                             <div class="user-info">
-                                                <span class="user-name">山田次郎</span>
+                                                <span class="user-name">山田 次郎 様</span>
+                                                <span class="user-details">デイサービスB</span>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="selected-count">選択中: 2名</div>
                                     <button class="demo-button primary">送迎開始</button>
                                 </div>
                             </div>
@@ -311,19 +328,26 @@
                                     <span>乗車記録</span>
                                 </div>
                                 <div class="screen-content">
-                                    <div class="timer">⏰ 14:23:15</div>
+                                    <div class="current-status">
+                                        <div class="status-time">14:23</div>
+                                        <div class="status-location">現在地: 田中様宅付近</div>
+                                    </div>
                                     <div class="record-list">
                                         <div class="record-item">
+                                            <div class="user-avatar small">田</div>
                                             <div class="user-info">
-                                                <span class="user-name">田中花子</span>
+                                                <span class="user-name">田中 花子 様</span>
+                                                <span class="pickup-time">予定 14:25</span>
                                             </div>
-                                            <button class="demo-button primary small">乗車記録</button>
+                                            <button class="demo-button primary small">乗車</button>
                                         </div>
                                         <div class="record-item">
+                                            <div class="user-avatar small">佐</div>
                                             <div class="user-info">
-                                                <span class="user-name">佐藤太郎</span>
+                                                <span class="user-name">佐藤 太郎 様</span>
+                                                <span class="pickup-time">予定 14:35</span>
                                             </div>
-                                            <button class="demo-button primary small">乗車記録</button>
+                                            <button class="demo-button outline small">待機中</button>
                                         </div>
                                     </div>
                                 </div>
@@ -351,21 +375,26 @@
                                     <span>到着記録</span>
                                 </div>
                                 <div class="screen-content">
-                                    <div class="timer">⏰ 15:08:42</div>
+                                    <div class="current-status">
+                                        <div class="status-time">15:08</div>
+                                        <div class="status-location arrival">到着: デイサービスA</div>
+                                    </div>
                                     <div class="record-list">
                                         <div class="record-item completed">
+                                            <div class="user-avatar small success">田</div>
                                             <div class="user-info">
-                                                <span class="user-name">田中花子</span>
-                                                <span class="time-stamp">乗車: 14:25</span>
+                                                <span class="user-name">田中 花子 様</span>
+                                                <span class="time-stamp">14:25 乗車 → 15:05 降車</span>
                                             </div>
-                                            <button class="demo-button success small">降車完了</button>
+                                            <div class="status-badge completed">完了</div>
                                         </div>
-                                        <div class="record-item">
+                                        <div class="record-item active">
+                                            <div class="user-avatar small">佐</div>
                                             <div class="user-info">
-                                                <span class="user-name">佐藤太郎</span>
-                                                <span class="time-stamp">乗車: 14:30</span>
+                                                <span class="user-name">佐藤 太郎 様</span>
+                                                <span class="time-stamp">14:35 乗車</span>
                                             </div>
-                                            <button class="demo-button primary small">降車記録</button>
+                                            <button class="demo-button primary small">降車</button>
                                         </div>
                                     </div>
                                 </div>
@@ -394,22 +423,32 @@
                                 </div>
                                 <div class="screen-content completion">
                                     <div class="completion-icon">✅</div>
-                                    <h3>送迎完了！</h3>
-                                    <div class="completion-stats">
-                                        <div class="stat-item">
-                                            <span class="stat-label">送迎人数</span>
-                                            <span class="stat-value">2名</span>
-                                        </div>
-                                        <div class="stat-item">
-                                            <span class="stat-label">所要時間</span>
-                                            <span class="stat-value">45分</span>
-                                        </div>
-                                        <div class="stat-item">
-                                            <span class="stat-label">走行距離</span>
-                                            <span class="stat-value">12.5km</span>
+                                    <h3>本日の送迎完了</h3>
+                                    <div class="completion-summary">
+                                        <div class="summary-card">
+                                            <div class="summary-header">送迎実績</div>
+                                            <div class="summary-content">
+                                                <div class="summary-item">
+                                                    <span>送迎人数</span>
+                                                    <span class="value">2名</span>
+                                                </div>
+                                                <div class="summary-item">
+                                                    <span>開始時刻</span>
+                                                    <span class="value">14:23</span>
+                                                </div>
+                                                <div class="summary-item">
+                                                    <span>終了時刻</span>
+                                                    <span class="value">15:08</span>
+                                                </div>
+                                                <div class="summary-item">
+                                                    <span>走行距離</span>
+                                                    <span class="value">12.5km</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <p class="auto-save">📝 記録は自動保存されました</p>
+                                    <p class="auto-save">送迎記録を保存しました</p>
+                                    <button class="demo-button secondary">ホームへ戻る</button>
                                 </div>
                             </div>
                         </div>
@@ -430,7 +469,7 @@
                 <!-- モバイルドライバー画面 -->
                 <div class="mobile-interface">
                     <h3>📱 ドライバー画面（スマホ）</h3>
-                    <p class="subtitle">送迎現場での直感的な操作</p>
+                    <p class="subtitle">送迎中のリアルタイム管理</p>
                     
                     <div class="phone-demo">
                         <div class="phone-frame">
@@ -447,39 +486,41 @@
                                     <div class="status-indicator"></div>
                                 </div>
                                 <div class="screen-content">
-                                    <div class="timer">⏰ 14:23:15</div>
+                                    <div class="status-bar">
+                                        <div class="status-time">14:23</div>
+                                        <div class="status-info">現在: 送迎中</div>
+                                    </div>
                                     
-                                    <!-- 利用者リスト -->
-                                    <div class="user-list">
-                                        <div class="user-card">
-                                            <div class="user-info">
-                                                <span class="user-name">田中 花子</span>
-                                                <div class="accessibility-badges">
-                                                    <span class="badge wheelchair">♿</span>
-                                                    <span class="badge medical">💊</span>
+                                    <!-- 送迎進捗 -->
+                                    <div class="pickup-progress">
+                                        <div class="progress-header">送迎進捗</div>
+                                        <div class="user-list">
+                                            <div class="user-item in-progress">
+                                                <div class="user-avatar">田</div>
+                                                <div class="user-details">
+                                                    <span class="user-name">田中 花子 様</span>
+                                                    <span class="user-status">移動中</span>
                                                 </div>
+                                                <button class="action-button arrival">到着</button>
                                             </div>
-                                            <div class="time-buttons">
-                                                <button class="demo-button primary">到着記録</button>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="user-card">
-                                            <div class="user-info">
-                                                <span class="user-name">佐藤 太郎</span>
-                                                <div class="accessibility-badges">
-                                                    <span class="badge assistance">🦯</span>
+                                            
+                                            <div class="user-item pending">
+                                                <div class="user-avatar">佐</div>
+                                                <div class="user-details">
+                                                    <span class="user-name">佐藤 太郎 様</span>
+                                                    <span class="user-status">次の予定</span>
                                                 </div>
-                                            </div>
-                                            <div class="time-buttons">
-                                                <button class="demo-button">出発記録</button>
+                                                <div class="time-info">14:35</div>
                                             </div>
                                         </div>
                                     </div>
                                     
-                                    <div class="odometer">
-                                        <span class="odometer-label">走行距離:</span>
-                                        <span class="odometer-value">23,456 km</span>
+                                    <div class="navigation-info">
+                                        <div class="next-destination">
+                                            <span class="label">次の目的地</span>
+                                            <span class="location">デイサービスA</span>
+                                        </div>
+                                        <button class="map-button">🗺️ 地図を開く</button>
                                     </div>
                                 </div>
                             </div>
@@ -487,9 +528,9 @@
                     </div>
                     
                     <div class="interface-features">
-                        <p>✓ 大きなボタンで簡単操作</p>
-                        <p>✓ リアルタイムでの時刻記録</p>
-                        <p>✓ ワンタップで到着・出発記録</p>
+                        <p>✓ 送迎状況をリアルタイムで管理</p>
+                        <p>✓ 利用者ごとの詳細情報表示</p>
+                        <p>✓ ワンタップで乗降車記録</p>
                     </div>
                 </div>
 
@@ -507,52 +548,77 @@
                                 <span class="pc-header-title">福祉送迎管理システム - ダッシュボード</span>
                             </div>
                             <div class="pc-content">
-                                <div class="admin-cards">
-                                    <div class="admin-card">
-                                        <span class="admin-card-icon">👥</span>
-                                        <span class="admin-card-label">ドライバー管理</span>
+                                <div class="dashboard-header">
+                                    <h2>送迎管理ダッシュボード</h2>
+                                    <div class="date-selector">2025年7月27日</div>
+                                </div>
+                                
+                                <div class="stats-overview">
+                                    <div class="stat-card">
+                                        <div class="stat-number">12</div>
+                                        <div class="stat-label">本日の送迎</div>
                                     </div>
-                                    <div class="admin-card">
-                                        <span class="admin-card-icon">🚐</span>
-                                        <span class="admin-card-label">車両管理</span>
+                                    <div class="stat-card">
+                                        <div class="stat-number">8</div>
+                                        <div class="stat-label">完了</div>
                                     </div>
-                                    <div class="admin-card">
-                                        <span class="admin-card-icon">👤</span>
-                                        <span class="admin-card-label">利用者管理</span>
+                                    <div class="stat-card">
+                                        <div class="stat-number">3</div>
+                                        <div class="stat-label">進行中</div>
                                     </div>
-                                    <div class="admin-card">
-                                        <span class="admin-card-icon">📝</span>
-                                        <span class="admin-card-label">送迎記録</span>
-                                    </div>
-                                    <div class="admin-card">
-                                        <span class="admin-card-icon">⚙️</span>
-                                        <span class="admin-card-label">事業者設定</span>
-                                    </div>
-                                    <div class="admin-card">
-                                        <span class="admin-card-icon">📊</span>
-                                        <span class="admin-card-label">レポート</span>
+                                    <div class="stat-card">
+                                        <div class="stat-number">1</div>
+                                        <div class="stat-label">予定</div>
                                     </div>
                                 </div>
                                 
-                                <div class="record-table">
-                                    <div class="record-header">
-                                        <span>本日の送迎記録</span>
-                                        <button class="export-btn">📊 CSV出力</button>
+                                <div class="management-sections">
+                                    <div class="section-tabs">
+                                        <button class="tab active">送迎記録</button>
+                                        <button class="tab">利用者管理</button>
+                                        <button class="tab">ドライバー管理</button>
+                                        <button class="tab">車両管理</button>
                                     </div>
-                                    <div class="record-row">
-                                        <span>田中花子</span>
-                                        <span>14:30 完了</span>
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div class="record-row">
-                                        <span>佐藤太郎</span>
-                                        <span>15:45 予定</span>
-                                        <div class="status-indicator" style="background: var(--accent-color);"></div>
-                                    </div>
-                                    <div class="record-row">
-                                        <span>山田次郎</span>
-                                        <span>16:15 予定</span>
-                                        <div class="status-indicator" style="background: var(--text-light);"></div>
+                                    
+                                    <div class="record-table-modern">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>時間</th>
+                                                    <th>利用者</th>
+                                                    <th>ドライバー</th>
+                                                    <th>車両</th>
+                                                    <th>ステータス</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>14:30</td>
+                                                    <td>田中 花子</td>
+                                                    <td>佐藤</td>
+                                                    <td>車両001</td>
+                                                    <td><span class="status-badge completed">完了</span></td>
+                                                    <td><button class="action-link">詳細</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14:45</td>
+                                                    <td>佐藤 太郎</td>
+                                                    <td>田中</td>
+                                                    <td>車両002</td>
+                                                    <td><span class="status-badge in-progress">進行中</span></td>
+                                                    <td><button class="action-link">追跡</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>16:00</td>
+                                                    <td>山田 次郎</td>
+                                                    <td>鈴木</td>
+                                                    <td>車両003</td>
+                                                    <td><span class="status-badge pending">予定</span></td>
+                                                    <td><button class="action-link">編集</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>

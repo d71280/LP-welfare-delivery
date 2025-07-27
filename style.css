@@ -1298,6 +1298,495 @@ body {
     color: var(--text-gray);
 }
 
+/* 新しいUIスタイル - welfare-delivery対応 */
+
+/* サービスタイプ選択 */
+.service-types {
+    margin: 20px 0;
+}
+
+.service-title {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.service-card.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ログインフォーム */
+.login-form {
+    text-align: center;
+    padding: 20px;
+}
+
+.login-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.form-field label {
+    display: block;
+    font-size: 12px;
+    color: var(--text-gray);
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* 選択画面 */
+.selection-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.selection-item {
+    margin-bottom: 16px;
+}
+
+.selection-item .label {
+    display: block;
+    font-size: 12px;
+    color: var(--text-gray);
+    margin-bottom: 6px;
+}
+
+/* ユーザー選択カード */
+.user-select-card {
+    display: flex;
+    align-items: center;
+    background: var(--bg-light);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.user-select-card.selected {
+    border-color: var(--primary-color);
+    background: #f0f7ff;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+.user-avatar.small {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+}
+
+.user-avatar.success {
+    background: var(--safe-green);
+}
+
+.user-details {
+    font-size: 10px;
+    color: var(--text-gray);
+    margin-top: 2px;
+}
+
+.user-facility {
+    display: block;
+    font-size: 10px;
+    color: var(--text-gray);
+    margin-top: 2px;
+}
+
+.selected-count {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-gray);
+    margin: 12px 0;
+}
+
+/* 現在の状況表示 */
+.current-status {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-time {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.status-location {
+    font-size: 12px;
+    color: var(--text-gray);
+}
+
+.status-location.arrival {
+    color: var(--safe-green);
+    font-weight: 600;
+}
+
+.location-info {
+    background: var(--safe-green);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* 記録アイテム */
+.record-item {
+    display: flex;
+    align-items: center;
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+}
+
+.record-item.completed {
+    opacity: 0.7;
+}
+
+.record-item.active {
+    border: 2px solid var(--primary-color);
+}
+
+.pickup-time,
+.pickup-address {
+    display: block;
+    font-size: 10px;
+    color: var(--text-gray);
+    margin-top: 2px;
+}
+
+.time-stamp {
+    display: block;
+    font-size: 10px;
+    color: var(--text-gray);
+    margin-top: 2px;
+}
+
+.status-badge {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.status-badge.completed {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.status-badge.in-progress {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.status-badge.pending {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+/* 完了画面 */
+.completion-summary {
+    margin: 24px 0;
+}
+
+.summary-card {
+    background: var(--bg-light);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.summary-header {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-gray);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.summary-content {
+    display: grid;
+    gap: 12px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.summary-item .value {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* ステータスバー */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 16px;
+    margin: -16px -16px 16px -16px;
+    font-size: 14px;
+}
+
+.status-info {
+    font-size: 12px;
+}
+
+/* ピックアップ進捗 */
+.pickup-progress {
+    background: var(--bg-light);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.progress-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.user-item.in-progress {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.user-item.pending {
+    opacity: 0.6;
+}
+
+.action-button {
+    margin-left: auto;
+    padding: 6px 16px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.action-button.arrival {
+    background: var(--safe-green);
+}
+
+.time-info {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-gray);
+}
+
+/* ナビゲーション情報 */
+.navigation-info {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.next-destination {
+    margin-bottom: 12px;
+}
+
+.next-destination .label {
+    display: block;
+    font-size: 10px;
+    color: var(--text-gray);
+    margin-bottom: 4px;
+}
+
+.next-destination .location {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.map-button {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* PC管理画面の新しいスタイル */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dashboard-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.date-selector {
+    font-size: 14px;
+    color: var(--text-gray);
+    padding: 6px 12px;
+    background: var(--bg-light);
+    border-radius: 6px;
+}
+
+.stats-overview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--text-gray);
+}
+
+.management-sections {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-tabs {
+    display: flex;
+    background: var(--bg-light);
+    padding: 0;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-gray);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab.active {
+    background: white;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.record-table-modern {
+    padding: 20px;
+}
+
+.record-table-modern table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.record-table-modern th {
+    text-align: left;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-gray);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.record-table-modern td {
+    padding: 16px 12px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.action-link {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* デモボタンのアウトラインスタイル */
+.demo-button.outline {
+    background: white;
+    border: 1px solid var(--border-color);
+    color: var(--text-gray);
+}
+
+.demo-button.secondary {
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
 .odometer-value {
     font-size: 12px;
     font-weight: 600;
