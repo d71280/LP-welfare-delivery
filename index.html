@@ -211,20 +211,20 @@
                                     </svg>
                                     <span>ドライバー画面</span>
                                 </div>
-                                <div class="screen-content">
-                                    <div class="login-form">
-                                        <div class="info-section">
-                                            <div class="info-icon">🔑</div>
-                                            <div class="info-title">送迎情報の設定</div>
-                                            <p class="info-desc">安全な送迎のため、必要な情報を入力してください</p>
+                                <div class="step-content">
+                                    <div class="login-content">
+                                        <div class="key-icon">🔑</div>
+                                        <h3 class="content-title">送迎情報の設定</h3>
+                                        <p class="content-subtitle">安全な送迎のため、<br>必要な情報を入力してください</p>
+                                        
+                                        <div class="input-group">
+                                            <label class="input-label">🔑 管理コード</label>
+                                            <input type="text" value="123456" class="input-field" />
                                         </div>
-                                        <div class="form-field">
-                                            <span class="field-icon">🔑</span>
-                                            <label>管理コード</label>
-                                            <input type="text" placeholder="6桁のコード" class="demo-input" />
-                                        </div>
-                                        <button class="demo-button purple-gradient">確認</button>
-                                        <div class="warning-message">
+                                        
+                                        <button class="action-btn pink">確認を開始する</button>
+                                        
+                                        <div class="warning-box">
                                             ⚠️ 管理者から発行された6桁の管理コードを入力してください
                                         </div>
                                     </div>
@@ -252,28 +252,30 @@
                                     </svg>
                                     <span>ドライバー選択</span>
                                 </div>
-                                <div class="screen-content">
-                                    <div class="driver-selection">
-                                        <div class="info-section">
-                                            <div class="info-icon">🔑</div>
-                                            <div class="info-title">送迎情報の設定</div>
-                                            <p class="info-desc">安全な送迎のため、必要な情報を入力してください</p>
-                                        </div>
-                                        <div class="selection-item">
-                                            <span class="field-icon">👤</span>
-                                            <label>担当ドライバー</label>
-                                            <select class="demo-select purple">
-                                                <option>山田 (D001)</option>
+                                <div class="step-content">
+                                    <div class="login-content">
+                                        <div class="key-icon">🔑</div>
+                                        <h3 class="content-title">送迎情報の設定</h3>
+                                        <p class="content-subtitle">安全な送迎のため、<br>必要な情報を入力してください</p>
+                                        
+                                        <div class="selection-group">
+                                            <label class="select-label">👤 担当ドライバー</label>
+                                            <select class="select-field">
+                                                <option>👤 山田太郎 (D001)</option>
                                             </select>
                                         </div>
-                                        <div class="selection-item">
-                                            <span class="field-icon">🚐</span>
-                                            <label>送迎車両</label>
-                                            <select class="demo-select purple">
-                                                <option>V001 (aaa)</option>
+                                        
+                                        <div class="selection-group">
+                                            <label class="select-label">🚐 送迎車両</label>
+                                            <select class="select-field">
+                                                <option>🚐 ハイエース (車両1)</option>
                                             </select>
                                         </div>
-                                        <button class="demo-button purple-gradient">次へ</button>
+                                        
+                                        <div class="button-group">
+                                            <button class="action-btn gray">←</button>
+                                            <button class="action-btn pink">→</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -299,35 +301,43 @@
                                     </svg>
                                     <span>利用者選択</span>
                                 </div>
-                                <div class="screen-content">
-                                    <div class="selection-header">
-                                        <div class="field-icon">👥</div>
-                                        <h3>送迎対象の利用者様 <span class="required">*</span></h3>
+                                <div class="step-content">
+                                    <h3 class="content-title">👥 送迎対象の利用者様 <span style="color: #ef4444;">*</span></h3>
+                                    
+                                    <div class="user-list">
+                                        <div class="user-select-item selected">
+                                            <div class="user-avatar-small">山</div>
+                                            <div class="user-info">
+                                                <div class="user-name">山田太郎</div>
+                                                <div class="user-meta">ID: 001 | 施設A</div>
+                                            </div>
+                                            <div class="check-mark">✓</div>
+                                        </div>
+                                        
+                                        <div class="user-select-item selected">
+                                            <div class="user-avatar-small">田</div>
+                                            <div class="user-info">
+                                                <div class="user-name">田中花子</div>
+                                                <div class="user-meta">ID: 002 | 施設B</div>
+                                            </div>
+                                            <div class="check-mark">✓</div>
+                                        </div>
+                                        
+                                        <div class="user-select-item">
+                                            <div class="user-avatar-small">佐</div>
+                                            <div class="user-info">
+                                                <div class="user-name">佐藤次郎</div>
+                                                <div class="user-meta">ID: 003 | 施設A</div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="user-selection">
-                                        <div class="user-select-card">
-                                            <div class="user-avatar purple">山</div>
-                                            <div class="user-info">
-                                                <span class="user-name">山田<br>1</span>
-                                            </div>
-                                            <div class="check-circle">○</div>
-                                        </div>
-                                        <div class="user-select-card">
-                                            <div class="user-avatar purple">田</div>
-                                            <div class="user-info">
-                                                <span class="user-name">田中<br>33333</span>
-                                            </div>
-                                            <div class="check-circle">○</div>
-                                        </div>
-                                        <div class="user-select-card">
-                                            <div class="user-avatar purple">中</div>
-                                            <div class="user-info">
-                                                <span class="user-name">中村<br>232444</span>
-                                            </div>
-                                            <div class="check-circle">○</div>
-                                        </div>
+                                    
+                                    <div class="selected-count">選択中: 2名</div>
+                                    
+                                    <div class="button-group">
+                                        <button class="action-btn gray">← 戻る</button>
+                                        <button class="action-btn pink">→ 次へ</button>
                                     </div>
-                                    <button class="demo-button purple-gradient">送迎を開始</button>
                                 </div>
                             </div>
                         </div>
@@ -352,36 +362,31 @@
                                     </svg>
                                     <span>乗車記録</span>
                                 </div>
-                                <div class="screen-content">
-                                    <div class="pickup-screen">
-                                        <div class="pickup-cards">
-                                            <div class="pickup-card">
-                                                <div class="user-circle purple">山</div>
-                                                <div class="user-name">山田</div>
+                                <div class="step-content">
+                                    <div class="pickup-content">
+                                        <div class="route-info">
+                                            <div class="route-label">現在地</div>
+                                            <div class="route-name">施設A</div>
+                                        </div>
+                                        
+                                        <div class="pickup-users">
+                                            <div class="pickup-user">
+                                                <div class="user-circle-large">山</div>
                                                 <div class="user-number">#1</div>
                                             </div>
                                         </div>
-                                        <div class="pickup-status">
-                                            <div class="status-item">
-                                                <span class="status-icon">📅</span>
-                                                <span>到着時刻</span>
-                                            </div>
-                                            <div class="time-display">14:29</div>
-                                            <button class="demo-button white-outline">修正</button>
+                                        
+                                        <div class="km-display">
+                                            <div class="km-value">完了</div>
+                                            <div class="km-label">7 km</div>
                                         </div>
-                                        <div class="pickup-status">
-                                            <div class="status-item">
-                                                <span class="status-icon">🔴</span>
-                                                <span>出発時刻</span>
-                                            </div>
-                                            <div class="time-display">14:29</div>
-                                            <button class="demo-button white-outline">修正</button>
+                                        
+                                        <div class="route-info">
+                                            <div class="route-label">次の目的地</div>
+                                            <div class="route-name">田中宅</div>
                                         </div>
-                                        <div class="pickup-note">
-                                            <span class="note-icon">🏠</span>
-                                            <span>送迎先住所</span>
-                                            <div class="note-text">住所情報なし</div>
-                                        </div>
+                                        
+                                        <button class="action-btn pink" style="width: 100%;">→ 次へ進む</button>
                                     </div>
                                 </div>
                             </div>
@@ -407,36 +412,26 @@
                                     </svg>
                                     <span>到着記録</span>
                                 </div>
-                                <div class="screen-content">
-                                    <div class="complete-status">
-                                        <div class="complete-badge">✅ 完了</div>
-                                        <div class="pickup-cards small">
-                                            <div class="pickup-card completed">
-                                                <div class="user-circle purple">田</div>
-                                                <div class="user-name">田中</div>
-                                                <div class="user-number">#3</div>
+                                <div class="step-content">
+                                    <div class="arrival-content">
+                                        <div class="arrival-status">
+                                            <div class="arrival-icon">🏠</div>
+                                            <div class="arrival-text">目的地に到着</div>
+                                        </div>
+                                        
+                                        <div class="pickup-users">
+                                            <div class="pickup-user">
+                                                <div class="user-circle-large">田</div>
+                                                <div class="user-number">#2</div>
                                             </div>
                                         </div>
-                                        <h3>全送迎完了</h3>
-                                        <p class="complete-message">お疲れ様でした！記録を完了してください</p>
-                                        <div class="mileage-section">
-                                            <div class="mileage-label">
-                                                <span class="mileage-icon">🚗</span>
-                                                <span>終了時走行距離 (km)</span>
-                                            </div>
-                                            <input type="text" value="37000" class="mileage-input" />
-                                            <span class="mileage-unit">km</span>
+                                        
+                                        <div class="km-display">
+                                            <div class="km-value">完了</div>
+                                            <div class="km-label">7 km</div>
                                         </div>
-                                        <p class="mileage-note">開始時: 37000 km</p>
-                                        <div class="time-display-section">
-                                            <span class="time-icon">⏰</span>
-                                            <span>終了時刻</span>
-                                            <div class="time-input-group">
-                                                <input type="text" value="14:29" class="time-input" />
-                                                <button class="time-button">現在時刻</button>
-                                            </div>
-                                        </div>
-                                        <button class="complete-button green">🏁 すべての送迎を完了する</button>
+                                        
+                                        <button class="action-btn green" style="width: 100%; margin-top: 1rem;">✓ 降車完了</button>
                                     </div>
                                 </div>
                             </div>
@@ -462,54 +457,14 @@
                                     </svg>
                                     <span>送迎完了</span>
                                 </div>
-                                <div class="screen-content completion">
-                                    <div class="completion-icon">✅</div>
-                                    <h3 class="celebration">🎉 送迎登録完了</h3>
-                                    <p class="complete-text">送迎記録の登録が正常に完了しました</p>
-                                    
-                                    <div class="registration-summary">
-                                        <div class="summary-title">📋 登録内容</div>
-                                        <div class="summary-table">
-                                            <div class="summary-row">
-                                                <span class="summary-label">日付</span>
-                                                <span class="summary-value">2025/7/27</span>
-                                            </div>
-                                            <div class="summary-row">
-                                                <span class="summary-label">送迎タイプ</span>
-                                                <span class="summary-value">通常送迎</span>
-                                            </div>
-                                            <div class="summary-row">
-                                                <span class="summary-label">ドライバー</span>
-                                                <span class="summary-value">山田</span>
-                                            </div>
-                                            <div class="summary-row">
-                                                <span class="summary-label">車両</span>
-                                                <span class="summary-value">V001 (aaa)</span>
-                                            </div>
-                                            <div class="summary-row">
-                                                <span class="summary-label">乗車人数</span>
-                                                <span class="summary-value">3名</span>
-                                            </div>
-                                            <div class="summary-row">
-                                                <span class="summary-label">利用者</span>
-                                                <span class="summary-value">
-                                                    <div class="user-list-summary">
-                                                        <div>山田 (1)</div>
-                                                        <div>田中 (33333)</div>
-                                                        <div>中村 (232444)</div>
-                                                    </div>
-                                                </span>
-                                            </div>
-                                        </div>
+                                <div class="step-content">
+                                    <div class="completion-content">
+                                        <div class="check-icon-large">✅</div>
+                                        <h2 class="completion-title">送迎登録完了</h2>
+                                        <p class="completion-subtitle">送迎記録の登録が<br>正常に完了しました</p>
+                                        
+                                        <div class="auto-save-note">✅ データは自動保存されました</div>
                                     </div>
-                                    
-                                    <button class="demo-button purple-gradient new-pickup">
-                                        ➕ 新しい送迎を開始<br>
-                                        <span class="button-sub">ログイン画面へ</span>
-                                    </button>
-                                    <button class="demo-button green history">
-                                        🕐 送迎履歴
-                                    </button>
                                 </div>
                             </div>
                         </div>
