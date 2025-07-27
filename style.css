@@ -68,9 +68,23 @@ body {
     color: white;
 }
 
+.logo-icon-wrapper {
+    background: white;
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo-icon {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.logo-icon-wrapper.footer {
+    background: transparent;
 }
 
 .nav {
@@ -145,6 +159,16 @@ body {
     border-radius: 40px;
     padding: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    height: 640px;
+}
+
+.phone-screen {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
 }
 
 .phone-screen {
@@ -161,11 +185,20 @@ body {
     text-align: center;
 }
 
+.app-logo-wrapper {
+    background: white;
+    border-radius: 8px;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
 .app-logo {
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     display: block;
-    margin: 0 auto 8px;
 }
 
 .app-title {
@@ -807,6 +840,17 @@ body {
 
 .phone-demo {
     margin-bottom: 24px;
+}
+
+.phone-frame {
+    width: 280px;
+    height: 560px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .phone-frame {
