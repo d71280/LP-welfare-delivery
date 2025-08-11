@@ -1488,6 +1488,8 @@ body {
   box-shadow: var(--shadow-xl);
   border: 2px solid var(--primary-color);
   position: relative;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .price-badge {
